@@ -23,9 +23,9 @@ def write_file(keys):
 
 def on_release(key):
     try:
-        print("\n\nAlplhanumeric key '{0}' released\n".format(key.char))
+        print("\n\nAlplhanumeric key {0} released\n".format(key.char))
     except AttributeError:
-        print("\n\nSpecial key '{0}' released\n".format(key))
+        print("\n\nSpecial key {0} released\n".format(key))
 
     if key == Key.esc:
         return False
